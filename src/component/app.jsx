@@ -6,6 +6,7 @@ import Calculator from "./content/calculator";
 import Login from "./content/login";
 import Register from "./content/register";
 import NotFound from "./content/notFound";
+import MapApp from "./content/MapApp"
 
 class App extends Component{
 
@@ -22,6 +23,7 @@ class App extends Component{
                         <Route path = "/calculator" element = {<Calculator />} />
                         <Route path = "/login" element = {<Login />} />
                         <Route path = "/register" element = {<Register />} />
+                        <Route path = "/campus" element = {<MapApp />} />
                         <Route path = "/404" element = {<NotFound />} />
                         <Route path = '*' element = {<Navigate replace to = "/404" />} />
                     </Routes>
