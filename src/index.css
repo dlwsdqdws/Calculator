@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.calculator{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 7rem);
+  grid-template-rows: minmax(6rem, auto) repeat(5, 4rem);
+  gap: 2px;
+  width : calc(28rem + 10px);
+  background-color: rgba(191, 191, 191, 0.75);
+  margin: 0 auto;
+  border : 2px solid black;
+}
+
+.output{
+  box-sizing: border-box;
+  grid-column: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.last_output{
+
+}
+
+.cur_output{
+  font-size: 3rem;
+}
+
+.calculator > button{
+  background-color: rgba(250, 250, 249, 0.75);
+}
+
+.calculator > button:hover{
+  background-color: #b5b5b5;
+}
