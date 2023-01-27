@@ -9,7 +9,7 @@ class DigitBtn extends Component{
     render(){
         return (
             <button 
-            onClick={() => this.props.add_digit(this.props.digit)}
+                onClick={() => this.props.add_digit(this.props.digit)}
             >
                 {this.props.digit}
             </button>

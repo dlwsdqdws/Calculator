@@ -3,7 +3,8 @@ const ACTIONS = {
     DELETE_DIGIT : "delete_digit",
     CHOOSE_OPERATION : "choose_operation",
     CLEAR : "clear",
-    EVALUATE : "evaluate"
+    EVALUATE : "evaluate",
+    REVERSE_DIGIT : "reverse_digit",
 };
 
 export default ACTIONS;
